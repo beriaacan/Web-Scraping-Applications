@@ -6,11 +6,11 @@ This repository contains examples of web scraping that I have implemented. Below
    - This is a Python project that combines the power of Scrapy for web scraping and crawling with Flask for micro web development using the Werkzeug framework. 
 
 2. **Example 2: []**
-   - []
+   - 
 
 3. **Example 3: []**
-   - []
+   - 
 
-Feel free to explore each example for a better understanding of the implemented web scraping techniques.
+
 
 
