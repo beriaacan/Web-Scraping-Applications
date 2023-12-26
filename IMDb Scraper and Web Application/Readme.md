@@ -1,39 +1,23 @@
-# IMDb Scraper and Web Application
+# IMDb Anime Data Web Scraping and Analysis
 
-This is a Python project that combines the power of Scrapy for web scraping and crawling with Flask for micro web development using the Werkzeug framework. The project is organized into two subprojects:
+## Overview
 
-## 1. IMDb Scraper
+This project focuses on web scraping IMDb's website to gather data on the top 1000 "Anime" movies. The collected data includes movie details such as name, certificate rating, duration, genre, IMDb rating, metascore, director, stars, votes, gross earnings, and a brief plot summary. The goal is to create a dataset for further analysis, recommendations, and insights.
 
-The IMDb Scraper is designed to extract information about specific movies from the Internet Movie Database (IMDb). The scraped data is then persistently stored in a MongoDB database. MongoDB was chosen as the ideal database for this use case, allowing each movie to be represented as a document.
+## Project Structure
 
-### How to Use
+- **Web Scraping Notebook:** `web_scraping_imdb_anime.ipynb`
+  - Initializes the project, installs required libraries, and imports necessary modules.
+  - Defines a web scraping function to extract data from IMDb.
+  - Scrapes IMDb data for multiple pages and creates a DataFrame.
+  - Saves the DataFrame to a CSV file.
 
-1. Navigate to the `imdb_scraper` folder.
-2. Run the Scrapy spider to scrape IMDb data.
-    ```bash
-    scrapy crawl imdb_spider
-    ```
-3. The scraped data will be stored in the MongoDB database.
+- **Exploratory Data Analysis (EDA):** `eda_imdb_anime.ipynb` (Optional)
+  - Explores various aspects of the movie data, including summary statistics, data visualization, genre analysis, director and actor insights, movie duration, user votes, gross earnings, and top-rated movies.
 
-## 2. Web Application
+## Installation
 
-The Web Application is responsible for rendering the IMDb data gathered by the scraper. It provides a user-friendly interface for exploring the movie information.
+1. Install required libraries:
 
-### How to Use
-
-1. Navigate to the `web_application` folder.
-2. Run the Flask application.
-    ```bash
-    flask run
-    ```
-3. Open your web browser and go to [http://localhost:5000](http://localhost:5000) to access the IMDb data.
-
-## Requirements
-
-- Python
-- Scrapy
-- Flask
-- MongoDB
-
-
-
+   ```bash
+   pip install beautifulsoup4 requests pandas numpy matplotlib seaborn
